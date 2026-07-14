@@ -1,0 +1,85 @@
+/* ==========================================
+   MONEY RAIN DESIGN SYSTEM
+========================================== */
+
+:root{
+
+    /* BRAND COLORS */
+
+    --primary:#6D28D9;
+    --primary-dark:#5B21B6;
+    --primary-light:#F3E8FF;
+
+    --secondary:#8B5CF6;
+
+    --accent:#A855F7;
+
+    /* NEUTRALS */
+
+    --dark:#111827;
+    --text:#475569;
+    --gray:#94A3B8;
+
+    --white:#FFFFFF;
+
+    --light:#F8FAFC;
+
+    --border:#E2E8F0;
+
+    /* STATUS */
+
+    --success:#22C55E;
+    --danger:#EF4444;
+    --warning:#F59E0B;
+
+    /* GRADIENTS */
+
+    --gradient-primary:
+    linear-gradient(
+        135deg,
+        #6D28D9,
+        #8B5CF6
+    );
+
+    --gradient-soft:
+    linear-gradient(
+        180deg,
+        #FFFFFF,
+        #F8FAFC
+    );
+
+    --gradient-bg:
+    radial-gradient(
+        circle at top left,
+        #F3E8FF,
+        #FFFFFF 45%,
+        #F8FAFC
+    );
+
+    /* SHADOWS */
+
+    --shadow-sm:
+    0 5px 15px rgba(15,23,42,.05);
+
+    --shadow-md:
+    0 15px 40px rgba(15,23,42,.08);
+
+    --shadow-lg:
+    0 25px 60px rgba(15,23,42,.12);
+
+    --shadow-purple:
+    0 20px 45px rgba(109,40,217,.22);
+
+    /* BORDER RADIUS */
+
+    --radius-sm:12px;
+    --radius-md:18px;
+    --radius-lg:28px;
+    --radius-xl:40px;
+    --radius-pill:999px;
+
+    /* TRANSITION */
+
+    --transition:.35s ease;
+
+}

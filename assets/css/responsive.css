@@ -1,0 +1,445 @@
+/*==================================================
+            RESPONSIVE DESIGN
+            MONEY RAIN
+==================================================*/
+
+
+/*=========================================
+Large Devices (≤1200px)
+=========================================*/
+
+@media (max-width:1200px){
+
+    .hero-title{
+
+        font-size:56px;
+
+    }
+
+}
+
+
+/*=========================================
+Tablet Landscape (≤992px)
+=========================================*/
+
+@media (max-width:992px){
+
+    section{
+
+        padding:90px 0;
+    }
+
+    /* NAVBAR */
+@media (max-width:992px){
+
+    .navbar-collapse{
+
+        background:#fff;
+
+        border-radius:18px;
+
+        margin-top:15px;
+
+        overflow:hidden;
+
+    }
+
+    .navbar-nav{
+
+        padding:15px;
+
+    }
+
+}
+
+    /* HERO */
+
+    .hero{
+
+        text-align:center;
+
+        padding-top:160px;
+
+        padding-bottom:80px;
+
+    }
+
+    .hero-title{
+
+        font-size:48px;
+
+        line-height:1.2;
+
+    }
+
+    .hero-subtitle{
+
+        margin:auto;
+
+        margin-bottom:35px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .hero-image{
+
+        margin-top:60px;
+
+    }
+
+}
+/*=========================================
+Mobile (≤768px)
+=========================================*/
+
+@media (max-width:768px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .hero{
+
+        padding-top:140px;
+
+    }
+
+    .hero-title{
+
+        font-size:38px;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:17px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+    }
+
+    .hero-image{
+
+        margin-top:50px;
+
+    }
+
+    .hero-card{
+
+        padding:30px;
+
+    }
+
+}
+/*=========================================
+Small Phones (≤576px)
+=========================================*/
+
+@media (max-width:576px){
+
+    .container{
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+    }
+
+    .hero-title{
+
+        font-size:32px;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:16px;
+
+    }
+
+    .btn-register,
+
+    .btn-outline{
+
+        width:100%;
+
+    }
+
+    .hero-card{
+
+        padding:25px;
+
+    }
+
+}
+/*=========================================
+Extra Small Phones (≤400px)
+=========================================*/
+
+@media (max-width:400px){
+
+    .hero-title{
+
+        font-size:28px;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:15px;
+
+    }
+
+    .navbar-brand{
+
+        font-size:20px;
+
+    }
+
+}
+/*==================================================
+        STATISTICS SECTION
+==================================================*/
+
+@media (max-width:992px){
+
+    .stats-section{
+
+        padding-top:70px;
+
+        padding-bottom:70px;
+
+    }
+
+    .stat-card{
+
+        padding:30px 25px;
+
+        text-align:center;
+
+    }
+
+    .stat-card h3{
+
+        font-size:2rem;
+
+    }
+
+    .stat-card p{
+
+        font-size:15px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .stats-section{
+
+        padding-top:60px;
+
+        padding-bottom:60px;
+
+    }
+
+    .stat-card{
+
+        padding:25px 20px;
+
+    }
+
+    .stat-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:28px;
+
+        margin-bottom:20px;
+
+    }
+
+    .stat-card h3{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .stats-section .row{
+
+        row-gap:20px;
+
+    }
+
+    .stat-card{
+
+        border-radius:18px;
+
+    }
+
+}
+/*==================================================
+            ABOUT SECTION
+==================================================*/
+
+@media (max-width:992px){
+
+    .about-section{
+
+        text-align:center;
+
+    }
+
+    .about-image{
+
+        height:auto;
+
+        display:flex;
+
+        justify-content:center;
+
+        margin-bottom:50px;
+
+    }
+
+    .about-main-card{
+
+        position:relative;
+
+        left:auto;
+
+        top:auto;
+
+        transform:none;
+
+        max-width:500px;
+
+    }
+
+    .top-card{
+
+        top:-20px;
+
+        right:10%;
+
+    }
+
+    .bottom-card{
+
+        left:10%;
+
+        bottom:-20px;
+
+    }
+
+    .about-features{
+
+        align-items:center;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .about-section h2{
+
+        font-size:34px;
+
+    }
+
+    .about-text{
+
+        font-size:16px;
+
+    }
+
+    .about-main-card{
+
+        padding:35px 25px;
+
+    }
+
+    .about-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:30px;
+
+    }
+
+    .mini-card{
+
+        padding:14px 18px;
+
+        font-size:14px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .about-image{
+
+        margin-bottom:40px;
+
+    }
+
+    .top-card,
+
+    .bottom-card{
+
+        position:relative;
+
+        top:auto;
+
+        left:auto;
+
+        right:auto;
+
+        bottom:auto;
+
+        margin:15px auto;
+
+        display:inline-flex;
+
+    }
+
+    .about-main-card{
+
+        border-radius:20px;
+
+    }
+
+}

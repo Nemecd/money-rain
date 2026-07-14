@@ -1,0 +1,81 @@
+/* Buttons */
+
+.btn-primary{
+
+    background:var(--gradient-primary);
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:var(--radius-pill);
+
+    transition:var(--transition);
+
+    font-weight:700;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-purple);
+
+}
+
+/* Cards */
+
+.card-modern{
+
+    border:none;
+
+    background:white;
+
+    border-radius:var(--radius-lg);
+
+    padding:35px;
+
+    box-shadow:var(--shadow-md);
+
+    transition:var(--transition);
+
+}
+
+.card-modern:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* Section Title */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:var(--dark);
+
+}
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+}

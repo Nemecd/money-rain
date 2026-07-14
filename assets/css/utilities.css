@@ -1,0 +1,31 @@
+.text-gradient{
+
+    background:var(--gradient-primary);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.glass{
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+}
+
+.shadow-purple{
+
+    box-shadow:var(--shadow-purple);
+
+}
+
+.rounded-xl{
+
+    border-radius:var(--radius-xl);
+
+}
