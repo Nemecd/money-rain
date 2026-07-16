@@ -1,0 +1,278 @@
+/*==================================================
+                AGREEMENT PAGE
+==================================================*/
+
+:root {
+  --primary: #6d28d9;
+  --primary-dark: #5b21b6;
+  --primary-light: #8b5cf6;
+
+  --white: #ffffff;
+  --background: #f8fafc;
+
+  --dark: #111827;
+  --text: #64748b;
+
+  --border: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+/*==================================
+            PAGE
+==================================*/
+
+.agreement-page {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+/*==================================
+            CARD
+==================================*/
+
+.agreement-card {
+  background: var(--white);
+
+  border-radius: 30px;
+
+  padding: 60px;
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.agreement-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background: rgba(109, 40, 217, 0.05);
+
+  top: -160px;
+  right: -160px;
+}
+
+/*==================================
+            HEADER
+==================================*/
+
+.agreement-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+
+  color: white;
+
+  font-size: 38px;
+
+  margin-bottom: 25px;
+}
+
+.agreement-card h1 {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: var(--dark);
+}
+
+.agreement-card p {
+  color: var(--text);
+
+  line-height: 1.8;
+}
+
+/*==================================
+        CONTENT
+==================================*/
+
+.agreement-content {
+  margin-top: 50px;
+}
+
+.agreement-content h4 {
+  color: var(--primary);
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.agreement-content p {
+  margin-bottom: 25px;
+}
+
+.agreement-content hr {
+  margin: 30px 0;
+
+  opacity: 0.1;
+}
+
+/*==================================
+        FOOTER
+==================================*/
+
+.agreement-footer {
+  margin-top: 50px;
+
+  background: #f8fafc;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  border: 1px solid var(--border);
+}
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-check-input {
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.form-check-label {
+  color: var(--dark);
+
+  line-height: 1.8;
+}
+
+/*==================================
+            BUTTONS
+==================================*/
+
+.btn-primary {
+  height: 58px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+
+  transition: 0.35s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 18px 35px rgba(109, 40, 217, 0.25);
+}
+
+.btn-outline-secondary {
+  height: 58px;
+
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*==================================
+        CUSTOM SCROLLBAR
+==================================*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+
+  border-radius: 20px;
+}
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+@media (max-width: 992px) {
+  .agreement-card {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .agreement-page {
+    padding: 40px 0;
+  }
+
+  .agreement-card {
+    padding: 30px 25px;
+
+    border-radius: 22px;
+  }
+
+  .agreement-card h1 {
+    font-size: 32px;
+  }
+
+  .agreement-icon {
+    width: 75px;
+    height: 75px;
+
+    font-size: 30px;
+  }
+
+  .agreement-footer {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .agreement-page {
+    padding: 20px 0;
+  }
+
+  .agreement-card {
+    padding: 25px 20px;
+  }
+
+  .agreement-card h1 {
+    font-size: 28px;
+  }
+
+  .agreement-content h4 {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
