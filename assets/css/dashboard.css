@@ -1,0 +1,269 @@
+@import url("variables.css");
+
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.dashboard-body {
+  background: var(--gradient-bg);
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+
+.dash-header {
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.dash-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dash-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.dash-logo span {
+  font-weight: 800;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.dash-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dash-welcome {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dash-logout-btn {
+  border: 2px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 8px 18px;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--white);
+  transition: var(--transition);
+}
+
+.dash-logout-btn:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* ---------- MAIN ---------- */
+
+.dash-main {
+  padding: 32px 0 60px;
+}
+
+.dash-section-title {
+  color: var(--dark);
+  font-weight: 800;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+/* ---------- QUICK ACTIONS GRID ---------- */
+
+.dash-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  padding: 22px 18px;
+  border-radius: var(--radius-md);
+  color: var(--white);
+  text-decoration: none;
+  min-height: 120px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.dash-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  color: var(--white);
+}
+
+.dash-tile i {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.tile-title {
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.tile-sub {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.tile-tasks     { background: linear-gradient(135deg, var(--secondary), var(--accent)); }
+.tile-invest    { background: var(--gradient-primary); }
+.tile-withdraw  { background: linear-gradient(135deg, var(--success), #16A34A); }
+.tile-referrals { background: linear-gradient(135deg, var(--accent), var(--primary)); }
+.tile-deposit   { background: linear-gradient(135deg, var(--warning), #D97706); }
+.tile-vip       { background: linear-gradient(135deg, var(--primary-dark), var(--dark)); }
+.tile-wallet    { background: linear-gradient(135deg, #334155, #1E293B); }
+.tile-support   { background: linear-gradient(135deg, var(--gray), #64748B); }
+
+/* ---------- REFERRAL STRIP ---------- */
+
+.dash-referral-strip {
+  margin-top: 24px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-lg);
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  box-shadow: var(--shadow-purple);
+  color: var(--white);
+}
+
+.referral-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.referral-code {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.dash-copy-btn {
+  background: var(--white);
+  color: var(--primary);
+  border-radius: var(--radius-pill);
+  padding: 10px 24px;
+  font-weight: 700;
+  border: none;
+  transition: var(--transition);
+}
+
+.dash-copy-btn:hover {
+  background: var(--primary-light);
+}
+
+/* ---------- STAT CARDS ---------- */
+
+.dash-stats-row {
+  margin-top: 28px;
+}
+
+.dash-stat-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+
+.stat-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--gray);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-sub {
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+.stat-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-top: 2px;
+}
+
+/* ---------- ACCOUNT SNAPSHOT ---------- */
+
+.dash-snapshot {
+  margin-top: 32px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px 26px;
+  box-shadow: var(--shadow-sm);
+}
+
+.snapshot-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.snapshot-row:last-of-type {
+  border-bottom: none;
+}
+
+.snapshot-row strong {
+  color: var(--dark);
+}
+
+.dash-activity-btn {
+  margin-top: 18px;
+  background: var(--gradient-primary);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  padding: 14px;
+  transition: var(--transition);
+}
+
+.dash-activity-btn:hover {
+  color: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 576px) {
+  .dash-snapshot,
+  .dash-referral-strip {
+    padding: 20px;
+  }
+}

@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             submitBtn.innerHTML = "Create Account";
 
-            alert("Supabase Registration Coming Next.");
+            // alert("Supabase Registration Coming Next.");
 
         }, 2000);
 

@@ -3,16 +3,12 @@
 /* ==========================
 RESET
 ========================== */
-html{
-
-    overflow-x:hidden;
-
+html {
+  overflow-x: hidden;
 }
 
-body{
-
-    overflow-x:hidden;
-
+body {
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -310,12 +306,10 @@ NAVBAR
 /* ==========================
 HERO
 ========================== */
-.hero{
+.hero {
+  min-height: 100vh;
 
-    min-height:100vh;
-
-    overflow:hidden;
-
+  overflow: hidden;
 }
 
 .hero-badge {
@@ -1364,7 +1358,7 @@ RESPONSIVE
 
   position: absolute;
 
-    overflow:hidden;
+  overflow: hidden;
 
   border-radius: 50%;
 
@@ -1652,50 +1646,176 @@ RESPONSIVE
   background: #5b21b6;
 }
 
-.custom-toggler{
+.custom-toggler {
+  border: none;
 
-    border:none;
+  background: none;
 
-    background:none;
+  box-shadow: none !important;
 
-    box-shadow:none !important;
-
-    padding:0;
-
+  padding: 0;
 }
 
-.custom-toggler span{
+.custom-toggler span {
+  display: block;
 
-    display:block;
+  width: 28px;
 
-    width:28px;
+  height: 3px;
 
-    height:3px;
+  background: #6d28d9;
 
-    background:#6D28D9;
+  margin: 6px 0;
 
-    margin:6px 0;
+  border-radius: 5px;
 
-    border-radius:5px;
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 /* Custom Toggler */
-.custom-toggler.active span:nth-child(1){
-
-    transform:translateY(9px) rotate(45deg);
-
+.custom-toggler.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
 }
 
-.custom-toggler.active span:nth-child(2){
-
-    opacity:0;
-
+.custom-toggler.active span:nth-child(2) {
+  opacity: 0;
 }
 
-.custom-toggler.active span:nth-child(3){
+.custom-toggler.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+/*==================================================
+            MONEY RAIN NOTIFICATIONS
+==================================================*/
 
-    transform:translateY(-9px) rotate(-45deg);
+#notificationContainer {
+  position: fixed;
 
+  top: 25px;
+
+  right: 25px;
+
+  z-index: 99999;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  width: min(400px, calc(100vw - 30px));
+}
+
+.money-notification {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 16px 18px;
+
+  border-radius: 16px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+
+  transform: translateX(120%);
+
+  opacity: 0;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.money-notification.show {
+  transform: translateX(0);
+
+  opacity: 1;
+}
+
+.notification-icon {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: rgba(220, 38, 38, 0.1);
+
+  color: #dc2626;
+
+  font-size: 18px;
+}
+
+.money-notification.success .notification-icon {
+  background: rgba(22, 163, 74, 0.1);
+
+  color: #16a34a;
+}
+
+.money-notification.warning .notification-icon {
+  background: rgba(245, 158, 11, 0.1);
+
+  color: #d97706;
+}
+
+.notification-message {
+  flex: 1;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.notification-close {
+  border: none;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.notification-close:hover {
+  color: #111827;
+}
+
+@media (max-width: 576px) {
+  #notificationContainer {
+    top: 15px;
+
+    right: 15px;
+
+    left: 15px;
+
+    width: auto;
+  }
+}
+.money-notification.success .notification-icon {
+  background: rgba(22, 163, 74, 0.1);
+
+  color: #16a34a;
+}
+
+.money-notification.warning .notification-icon {
+  background: rgba(245, 158, 11, 0.1);
+
+  color: #d97706;
 }

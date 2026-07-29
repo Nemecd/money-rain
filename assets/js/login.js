@@ -47,7 +47,7 @@ Logging In...
 
             /* Supabase login goes here */
 
-            alert("Supabase Login Integration Coming Next");
+            // alert("Supabase Login Integration Coming Next");
         }, 2000);
     });
 });
